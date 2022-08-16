@@ -26,6 +26,7 @@ pipeline {
 
     stage('Production') {
       steps {
+        input(message: 'Are you sure for deploy', ok: 'Yes im sure')
         echo 'Good luck in deploy'
       }
     }
